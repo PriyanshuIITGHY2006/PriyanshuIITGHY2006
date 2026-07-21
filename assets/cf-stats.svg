@@ -1,0 +1,29 @@
+<svg width="495" height="200" viewBox="0 0 495 200" xmlns="http://www.w3.org/2000/svg">
+<style>text{font-family:'Segoe UI',Ubuntu,sans-serif}
+.t1{font-size:15px;font-weight:600;fill:#e6edf3}
+.t2{font-size:11px;fill:#6e7681}
+.lbl{font-size:12px;fill:#8b949e}
+.val{font-size:24px;font-weight:700;fill:#0000FF}
+.val2{font-size:24px;font-weight:700;fill:#e6edf3}
+.sub{font-size:11px;fill:#6e7681}</style>
+<rect width="495" height="200" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<circle cx="30" cy="30" r="13" fill="#1f6feb"/>
+<text x="30" y="35" text-anchor="middle" font-size="13" font-weight="bold" fill="white" font-family="Segoe UI,sans-serif">cf</text>
+<text x="52" y="25" class="t1">Codeforces</text>
+<text x="52" y="39" class="t2">@PriyanshuIITGHY2006</text>
+<line x1="16" y1="52" x2="479" y2="52" stroke="#21262d" stroke-width="1"/>
+<text x="35" y="76" class="lbl">Current Rating</text>
+<text x="35" y="103" class="val">1605</text>
+<text x="35" y="118" class="sub">Expert</text>
+<text x="200" y="76" class="lbl">Max Rating</text>
+<text x="200" y="103" class="val">1605</text>
+<text x="200" y="118" class="sub">Expert</text>
+<text x="360" y="76" class="lbl">Problems Solved</text>
+<text x="360" y="103" class="val2">450+</text>
+<text x="360" y="118" class="sub">800 – 2400</text>
+<line x1="16" y1="132" x2="479" y2="132" stroke="#21262d" stroke-width="1"/>
+<text x="16" y="152" class="lbl">Progress to Legendary Grandmaster (3500)</text>
+<rect x="16" y="160" width="463" height="7" rx="3" fill="#21262d"/>
+<rect x="16" y="160" width="212" height="7" rx="3" fill="#0000FF" opacity="0.85"/>
+<text x="16" y="188" class="sub">Updated daily · GitHub Actions · codeforces.com/profile/PriyanshuIITGHY2006</text>
+</svg>
