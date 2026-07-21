@@ -1,21 +1,22 @@
-<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-<style>text{font-family:'Segoe UI',Ubuntu,sans-serif}
-.t1{font-size:14px;font-weight:600;fill:#e6edf3}
-.t2{font-size:11px;fill:#6e7681}
-.lbl{font-size:11px;fill:#8b949e}
-.val{font-size:24px;font-weight:700;fill:#e6edf3}
-.ln{font-size:11px;fill:#8b949e}
+<svg width="495" height="205" viewBox="0 0 495 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="494" height="204" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="494" height="4" rx="2" fill="#58a6ff"/>
+<style>text{font-family:'Segoe UI',Ubuntu,-apple-system,sans-serif}
+.title{font-size:16px;font-weight:700;fill:#e6edf3}
+.handle{font-size:11px;fill:#7d8590}
+.lbl{font-size:10px;font-weight:600;letter-spacing:.5px;fill:#7d8590}
+.val{font-size:25px;font-weight:800;fill:#e6edf3}
+.sec{font-size:10px;font-weight:600;letter-spacing:.5px;fill:#8b949e}
+.ln{font-size:11px;fill:#c9d1d9}
 .lp{fill:#6e7681}</style>
-<rect width="495" height="195" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-<text x="16" y="26" class="t1">GitHub Overview · @PriyanshuIITGHY2006</text>
-<line x1="16" y1="36" x2="479" y2="36" stroke="#21262d" stroke-width="1"/>
-<text x="40"  y="64" class="lbl">Commits</text><text x="40"  y="90" class="val">515</text>
-<text x="160" y="64" class="lbl">Pull Requests</text><text x="160" y="90" class="val">58</text>
-<text x="290" y="64" class="lbl">Stars Earned</text><text x="290" y="90" class="val">0</text>
-<text x="400" y="64" class="lbl">Issues</text><text x="400" y="90" class="val">0</text>
-<line x1="16" y1="108" x2="479" y2="108" stroke="#21262d" stroke-width="1"/>
-<text x="16" y="124" class="lbl">Top Languages</text>
-<rect x="16" y="130" width="463" height="8" rx="4" fill="#21262d"/>
-<rect x="16" y="130" width="345" height="8" rx="2" fill="#f34b7d"/><rect x="361" y="130" width="116" height="8" rx="2" fill="#3572A5"/><rect x="477" y="130" width="1" height="8" rx="2" fill="#336790"/>
-<circle cx="21" cy="152" r="5" fill="#f34b7d"/><text x="30" y="156" class="ln">C++ <tspan class="lp">75%</tspan></text><circle cx="176" cy="152" r="5" fill="#3572A5"/><text x="185" y="156" class="ln">Python <tspan class="lp">25%</tspan></text><circle cx="331" cy="152" r="5" fill="#336790"/><text x="340" y="156" class="ln">PLpgSQL <tspan class="lp">0%</tspan></text>
+<circle cx="34" cy="36" r="15" fill="#161b22"/>
+<g transform="translate(24,26) scale(1.25)"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#e6edf3"/></g>
+<text x="59" y="32" class="title">GitHub Overview</text>
+<text x="59" y="47" class="handle">@PriyanshuIITGHY2006</text>
+<line x1="16" y1="62" x2="479" y2="62" stroke="#21262d"/>
+<rect x="16" y="74" width="108" height="60" rx="8" fill="#0f141b" stroke="#21262d"/><text x="30" y="96" class="lbl">COMMITS</text><text x="30" y="123" class="val">515</text><rect x="134" y="74" width="108" height="60" rx="8" fill="#0f141b" stroke="#21262d"/><text x="148" y="96" class="lbl">PULL REQUESTS</text><text x="148" y="123" class="val">58</text><rect x="252" y="74" width="108" height="60" rx="8" fill="#0f141b" stroke="#21262d"/><text x="266" y="96" class="lbl">STARS EARNED</text><text x="266" y="123" class="val">0</text><rect x="370" y="74" width="108" height="60" rx="8" fill="#0f141b" stroke="#21262d"/><text x="384" y="96" class="lbl">ISSUES</text><text x="384" y="123" class="val">0</text>
+<text x="16" y="152" class="sec">TOP LANGUAGES</text>
+<clipPath id="ghBar"><rect x="16" y="160" width="463" height="8" rx="4"/></clipPath>
+<g clip-path="url(#ghBar)"><rect x="16" y="160" width="463" height="8" fill="#21262d"/><rect x="16" y="160" width="347" height="8" fill="#f34b7d"/><rect x="363" y="160" width="116" height="8" fill="#3572A5"/><rect x="479" y="160" width="1" height="8" fill="#336790"/></g>
+<circle cx="21" cy="187" r="5" fill="#f34b7d"/><text x="31" y="191" class="ln">C++ <tspan class="lp">75%</tspan></text><circle cx="176" cy="187" r="5" fill="#3572A5"/><text x="186" y="191" class="ln">Python <tspan class="lp">25%</tspan></text><circle cx="331" cy="187" r="5" fill="#336790"/><text x="341" y="191" class="ln">PLpgSQL <tspan class="lp">0%</tspan></text>
 </svg>

@@ -53,41 +53,58 @@ def fetch():
         "langs":   [(k, v["color"], v["size"]/total) for k, v in langs],
     }
 
+GH_MARK = ("M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94"
+           "-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07"
+           "-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 "
+           "1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73"
+           ".54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z")
+
 def make_svg(d):
-    W, H = 495, 195
-    # language bar
-    bar_segs, x = "", 16
-    for _, color, pct in d["langs"]:
-        w = max(1, int((W-32) * pct))
-        bar_segs += f'<rect x="{x}" y="130" width="{w}" height="8" rx="2" fill="{color}"/>'
-        x += w
-    # legend
-    legend = ""
+    W, H = 495, 205
+    stats = [
+        (16,  "COMMITS",       d["commits"]),
+        (134, "PULL REQUESTS", d["prs"]),
+        (252, "STARS EARNED",  d["stars"]),
+        (370, "ISSUES",        d["issues"]),
+    ]
+    pod_svg = ""
+    for x, lbl, val in stats:
+        pod_svg += (
+            f'<rect x="{x}" y="74" width="108" height="60" rx="8" '
+            f'fill="#0f141b" stroke="#21262d"/>'
+            f'<text x="{x+14}" y="96" class="lbl">{lbl}</text>'
+            f'<text x="{x+14}" y="123" class="val">{val}</text>'
+        )
+    # language bar (clipped for rounded ends) + legend
+    bar_segs, legend, bx = "", "", 16
     for i, (name, color, pct) in enumerate(d["langs"]):
+        w = max(1, round((W-32) * pct))
+        bar_segs += f'<rect x="{bx}" y="160" width="{w}" height="8" fill="{color}"/>'
+        bx += w
         lx = 16 + (i % 3) * 155
-        ly = 156 + (i // 3) * 18
-        legend += (f'<circle cx="{lx+5}" cy="{ly-4}" r="5" fill="{color}"/>'
-                   f'<text x="{lx+14}" y="{ly}" class="ln">{name} '
+        legend += (f'<circle cx="{lx+5}" cy="187" r="5" fill="{color}"/>'
+                   f'<text x="{lx+15}" y="191" class="ln">{name} '
                    f'<tspan class="lp">{pct:.0%}</tspan></text>')
-    return f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">
-<style>text{{font-family:'Segoe UI',Ubuntu,sans-serif}}
-.t1{{font-size:14px;font-weight:600;fill:#e6edf3}}
-.t2{{font-size:11px;fill:#6e7681}}
-.lbl{{font-size:11px;fill:#8b949e}}
-.val{{font-size:24px;font-weight:700;fill:#e6edf3}}
-.ln{{font-size:11px;fill:#8b949e}}
+    return f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="494" height="204" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="494" height="4" rx="2" fill="#58a6ff"/>
+<style>text{{font-family:'Segoe UI',Ubuntu,-apple-system,sans-serif}}
+.title{{font-size:16px;font-weight:700;fill:#e6edf3}}
+.handle{{font-size:11px;fill:#7d8590}}
+.lbl{{font-size:10px;font-weight:600;letter-spacing:.5px;fill:#7d8590}}
+.val{{font-size:25px;font-weight:800;fill:#e6edf3}}
+.sec{{font-size:10px;font-weight:600;letter-spacing:.5px;fill:#8b949e}}
+.ln{{font-size:11px;fill:#c9d1d9}}
 .lp{{fill:#6e7681}}</style>
-<rect width="{W}" height="{H}" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-<text x="16" y="26" class="t1">GitHub Overview · @{USERNAME}</text>
-<line x1="16" y1="36" x2="479" y2="36" stroke="#21262d" stroke-width="1"/>
-<text x="40"  y="64" class="lbl">Commits</text><text x="40"  y="90" class="val">{d["commits"]}</text>
-<text x="160" y="64" class="lbl">Pull Requests</text><text x="160" y="90" class="val">{d["prs"]}</text>
-<text x="290" y="64" class="lbl">Stars Earned</text><text x="290" y="90" class="val">{d["stars"]}</text>
-<text x="400" y="64" class="lbl">Issues</text><text x="400" y="90" class="val">{d["issues"]}</text>
-<line x1="16" y1="108" x2="479" y2="108" stroke="#21262d" stroke-width="1"/>
-<text x="16" y="124" class="lbl">Top Languages</text>
-<rect x="16" y="130" width="{W-32}" height="8" rx="4" fill="#21262d"/>
-{bar_segs}
+<circle cx="34" cy="36" r="15" fill="#161b22"/>
+<g transform="translate(24,26) scale(1.25)"><path d="{GH_MARK}" fill="#e6edf3"/></g>
+<text x="59" y="32" class="title">GitHub Overview</text>
+<text x="59" y="47" class="handle">@{USERNAME}</text>
+<line x1="16" y1="62" x2="479" y2="62" stroke="#21262d"/>
+{pod_svg}
+<text x="16" y="152" class="sec">TOP LANGUAGES</text>
+<clipPath id="ghBar"><rect x="16" y="160" width="463" height="8" rx="4"/></clipPath>
+<g clip-path="url(#ghBar)"><rect x="16" y="160" width="463" height="8" fill="#21262d"/>{bar_segs}</g>
 {legend}
 </svg>"""
 
