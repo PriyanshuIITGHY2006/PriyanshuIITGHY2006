@@ -3,7 +3,7 @@
 **Priyanshu Debnath**  
 B.Tech Electronics & Electrical Engineering · Minor in Mathematics · IIT Guwahati (CPI 9.52)
 
-[![Codeforces](https://img.shields.io/badge/Codeforces-Specialist_%C2%B7_Max_1473-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/PriyanshuIITGHY2006)
+[![Codeforces](https://img.shields.io/badge/Codeforces-Specialist_%C2%B7_Max_1473-03A89E?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/PriyanshuIITGHY2006)
 [![CodeChef](https://img.shields.io/badge/CodeChef-2--Star-5B4638?style=flat-square&logo=codechef&logoColor=white)](https://codechef.com/users/priyanshuiitghy)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/priyanshu-debnath-3a81711b3)
 [![Portfolio](https://img.shields.io/badge/Portfolio-181717?style=flat-square&logo=github&logoColor=white)](https://priyanshuiitghy2006.github.io/)
@@ -21,7 +21,7 @@ First-year EEE undergraduate at IIT Guwahati. I compete on Codeforces, write mos
 **Codeforces Specialist** &nbsp;·&nbsp; max rating **1473** &nbsp;·&nbsp; **CodeChef 2-Star**  
 **250+** accepted solutions across difficulty bands 800–2400, indexed automatically by rating and tag.
 
-[![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?handle=PriyanshuIITGHY2006&theme=github_dark)](https://codeforces.com/profile/PriyanshuIITGHY2006)
+![CF Stats](./assets/cf-stats.svg)
 
 <div align="center">
 <a href="https://github.com/PriyanshuIITGHY2006/codeforces-solutions">
@@ -63,19 +63,9 @@ First-year EEE undergraduate at IIT Guwahati. I compete on Codeforces, write mos
 
 ## Stats
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=PriyanshuIITGHY2006&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github&count_private=true" height="160" alt="GitHub Stats"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuIITGHY2006&theme=github_dark&hide_border=true&layout=compact&langs_count=5&hide=html,css,typescript,javascript" height="160" alt="Top Languages"/>
-
-</div>
-
-<div align="center">
+![GitHub Metrics](./assets/github-metrics.svg)
 
 [![Streak](https://streak-stats.demolab.com?user=PriyanshuIITGHY2006&theme=github-dark&hide_border=true)](https://git.io/streak-stats)
-
-</div>
 
 ---
 
