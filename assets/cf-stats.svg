@@ -25,9 +25,9 @@
 <rect x="393" y="24" width="86" height="26" rx="13" fill="#0000FF" fill-opacity="0.12" stroke="#0000FF" stroke-opacity="0.5"/>
 <text x="436" y="41" text-anchor="middle" class="pill">Expert</text>
 <line x1="16" y1="64" x2="479" y2="64" stroke="#21262d"/>
-<rect x="16" y="76" width="147" height="72" rx="8" fill="#0f141b" stroke="#21262d"/><text x="31" y="99" class="lbl">CURRENT RATING</text><text x="31" y="128" class="val" fill="#0000FF">1605</text><text x="31" y="142" class="sub">Expert</text><rect x="174" y="76" width="147" height="72" rx="8" fill="#0f141b" stroke="#21262d"/><text x="189" y="99" class="lbl">MAX RATING</text><text x="189" y="128" class="val" fill="#0000FF">1605</text><text x="189" y="142" class="sub">Expert</text><rect x="332" y="76" width="147" height="72" rx="8" fill="#0f141b" stroke="#21262d"/><text x="347" y="99" class="lbl">SOLVED</text><text x="347" y="128" class="val" fill="#e6edf3">500+</text><text x="347" y="142" class="sub">rated 800 – 2400</text>
+<rect x="16" y="76" width="147" height="72" rx="8" fill="#0f141b" stroke="#21262d"/><text x="31" y="99" class="lbl">CURRENT RATING</text><text x="31" y="128" class="val" fill="#0000FF">1647</text><text x="31" y="142" class="sub">Expert</text><rect x="174" y="76" width="147" height="72" rx="8" fill="#0f141b" stroke="#21262d"/><text x="189" y="99" class="lbl">MAX RATING</text><text x="189" y="128" class="val" fill="#0000FF">1647</text><text x="189" y="142" class="sub">Expert</text><rect x="332" y="76" width="147" height="72" rx="8" fill="#0f141b" stroke="#21262d"/><text x="347" y="99" class="lbl">SOLVED</text><text x="347" y="128" class="val" fill="#e6edf3">500+</text><text x="347" y="142" class="sub">rated 800 – 2400</text>
 <text x="16" y="172" class="lbl" fill="#8b949e" style="letter-spacing:0">Progress to Legendary Grandmaster · 3500</text>
 <rect x="16" y="180" width="463" height="8" rx="4" fill="#21262d"/>
-<rect x="16" y="180" width="212" height="8" rx="4" fill="url(#cfBar)"/>
+<rect x="16" y="180" width="218" height="8" rx="4" fill="url(#cfBar)"/>
 <text x="16" y="205" class="foot">Auto-updated daily via GitHub Actions · codeforces.com/profile/PriyanshuIITGHY2006</text>
 </svg>
